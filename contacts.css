@@ -1,0 +1,36 @@
+h1{
+    color: #151515;
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    margin: 16px 0;
+}
+
+hr.class-1 { 
+    border-top: 3px solid #8c8b8b; 
+} 
+  
+hr.class-2 { 
+    border-top: 3px solid #8c8b8b; 
+}
+.quest{
+    margin: 40px auto;
+}
+.form{
+    max-width: 340px;
+    min-width: 300px;
+    margin-bottom: 48px;
+    background: orange;
+    color:whitesmoke;
+    padding-left: 48px;
+    /* border:orangered 2px solid; */
+    border-radius: 10%;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+#id_form{
+    padding: 16px 0;
+ 
+}
+label{
+    font-family: 'Pattaya', sans-serif;  
+}

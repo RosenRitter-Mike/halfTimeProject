@@ -1,0 +1,181 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+header{
+   background: rgba(252,234,187,1);
+   background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(100%, rgba(251,223,147,1)));
+   background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+   background: -o-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+   background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+   background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 ); ;
+   text-align:center;
+   display: flex;
+   justify-content: center;
+   padding-top:8px;
+}
+.search{
+  background: transparent;
+  border: 0px solid #000000 ;
+}
+.left-corn{
+  border-radius: 200px 0px 0px 200px;
+  -moz-border-radius: 200px 0px 0px 200px;
+  -webkit-border-radius: 200px 0px 0px 200px;
+  border: 0px solid #000000;
+}
+
+.right-corn{
+border-radius: 0px 200px 200px 0px;
+-moz-border-radius: 0px 200px 200px 0px;
+-webkit-border-radius: 0px 200px 200px 0px;
+border: 0px solid #000000;
+}
+
+.green{
+  background-color: #8CBF3F;
+}
+.purple{
+  background-color: #9453A6;
+}
+
+.orange{
+  background-color: #F2CC0F;
+}
+
+header nav{
+margin-top:24px;
+margin-bottom: 4px;
+background-color: #f2f2f2;
+border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+text-align:center;
+display: flex;
+justify-content: center;
+}
+header nav a{
+  font-family: 'Times New Roman', Times, serif;  
+  font-size: medium;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding:4px 36px;
+  height: 48px !important;
+  /* display: inline-flex;
+  align-items: center; */
+}
+
+header nav a:hover{
+  color:orange;
+  text-decoration: none;
+}
+header nav a::before{
+  content: "";
+  display: block;
+  width:0;
+  height: 2px;
+  background:#444;
+  transition:0.8s;
+  margin:0 auto;
+  opacity: 0;
+}
+
+header nav a:hover::before{
+  content: "";
+  display: block;
+  width:100%;
+  height: 2px;
+  background:#444;
+  opacity: 1;
+}
+
+
+/* מייצר תוכן אחריי התגית */
+header nav a::after{
+  content: "";
+  display: block;
+  width:0;
+  height: 4px;
+  background:#444;
+  transition:0.8s;
+  margin:0 auto;
+  opacity: 0;
+}
+
+header nav a:hover::after{
+  content: "";
+  display: block;
+  width:100%;
+  height: 4px;
+  background:#444;
+  opacity: 1;
+}
+
+
+header .burger{
+  display: none;
+}
+
+
+
+
+footer{
+    text-align: center;
+    background: #9453A6;
+    color: #F2CC0F;
+    width: 100%;
+  }
+
+@media screen and (max-width:768px){
+
+    header nav{
+      position: absolute;
+      background: #f2f2f2;
+      right:0;
+      top:48px;
+      width:50%;
+   
+       z-index:2;
+      display: none;
+    }
+  
+    header nav a{
+      text-align: center;
+      display: block;
+      padding:12px;
+     
+     
+    }
+  
+    header nav a.mob_hide{
+      display: none;
+    }
+  
+    header .burger{
+      display: block;
+      font-size: 2em;
+      cursor: pointer;
+    }
+      .left-corn{
+        border-radius: 200px 200px 0px 0px;
+        -moz-border-radius: 200px 200px 0px 0px;
+        -webkit-border-radius: 200px 200px 0px 0px;
+        border: 0px solid #000000;
+     }
+    
+     .right-corn{
+        border-radius: 0px 0px 200px 200px;
+        -moz-border-radius: 0px 0px 200px 200px;
+        -webkit-border-radius: 0px 0px 200px 200px;
+        border: 0px solid #000000;
+     }
+     /* .main{
+       margin:0 auto;
+       text-align: center;
+       justify-content: center;
+       margin-left: 96px; */
+}
+    
